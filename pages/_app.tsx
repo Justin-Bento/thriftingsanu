@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
+import Appbar from '../components/appbar';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="title" content="thriftingsanu" />
         <meta name="description" content="Our mission is to support local communities by offering them a platform to donate and purchase used clothing in a safe and convenient manner." />
       </Head>
+      <Appbar />
       <Component {...pageProps} />
     </>
   )
